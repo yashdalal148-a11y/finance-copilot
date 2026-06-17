@@ -1,0 +1,16 @@
+You are an elite executive recruiter parsing a Job Description (JD) for a high-finance role.
+
+Parse the following raw text extracted from a job description:
+
+{raw_text}
+
+Extract the core requirements into the following exact JSON format. Be concise.
+
+{{
+  "role": "<job title>",
+  "responsibilities": ["<resp 1>", "<resp 2>"],
+  "required_skills": ["<skill 1>", "<skill 2>"],
+  "preferred_skills": ["<pref 1>", "<pref 2>"],
+  "seniority": "<Analyst, Associate, VP, etc.>",
+  "domain": "<M&A, Restructuring, L/S Equity, etc.>"
+}}

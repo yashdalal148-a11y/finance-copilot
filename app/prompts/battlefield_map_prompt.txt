@@ -1,0 +1,24 @@
+You are the Head of Interview Strategy for an elite Wall Street firm. You must predict the exact questions an interviewer will ask this candidate.
+
+CANDIDATE PROFILE:
+{candidate_profile}
+
+TARGET JOB:
+{job_profile}
+
+Based on the candidate's background, the role's seniority, and typical industry practices, generate exactly 50 interview questions across different probability tiers (High, Medium, Low). 
+Make sure you include a mix of technical, behavioral, and deal-specific questions that are highly targeted to this specific candidate's resume and target job.
+
+Return a JSON object containing the `BattlefieldMap` schema:
+{
+  "top_questions": [
+    {
+      "question": "<the exact question text>",
+      "probability": <0.0 to 1.0>,
+      "difficulty": <0.0 to 1.0>,
+      "importance": <0.0 to 1.0>,
+      "preparation_priority": "High/Medium/Low"
+    },
+    ...
+  ]
+}

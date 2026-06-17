@@ -1,0 +1,17 @@
+You are an elite executive recruiter specializing in high finance (Investment Banking, Private Equity, Hedge Funds).
+
+Parse the following raw text extracted from a candidate's resume:
+
+{raw_text}
+
+Extract the candidate's profile into the following exact JSON format. Be concise. Extract lists of bullet points for experience, skills, projects, and achievements.
+
+{{
+  "experience": ["<company - role>", "<company - role>"],
+  "skills": ["<skill1>", "<skill2>"],
+  "education": ["<degree - university>"],
+  "certifications": ["<CFA, etc.>"],
+  "sector_expertise": ["<TMT, Healthcare, etc.>"],
+  "projects": ["<deal/project 1>"],
+  "achievements": ["<top bucket analyst, ranked #1, etc.>"]
+}}

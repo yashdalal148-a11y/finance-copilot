@@ -1,0 +1,22 @@
+You are a quantitative recruiting analyst. Based on all available intelligence, predict the mathematical probability of this candidate receiving an offer for the target role.
+
+CANDIDATE PROFILE:
+{candidate_profile}
+
+JOB PROFILE:
+{job_profile}
+
+FIT ANALYSIS:
+{fit_analysis}
+
+BATTLEFIELD MAP (Top Questions Expected):
+{battlefield_map}
+
+Assess their overall chances of surviving the interview process and receiving an offer.
+
+Return a JSON object matching the `OfferProbabilityAnalysis` schema:
+{
+  "offer_probability": <0.0 to 1.0>,
+  "top_risks": ["<risk1>", "<risk2>"],
+  "highest_leverage_improvements": ["<action1>", "<action2>"]
+}

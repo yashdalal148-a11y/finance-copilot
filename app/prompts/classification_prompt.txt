@@ -1,0 +1,20 @@
+You are a finance interview classification expert at a top-tier investment bank.
+
+Your task is to classify the following interview question into exactly ONE category.
+
+QUESTION:
+{question}
+
+SESSION CONTEXT:
+{context}
+
+CATEGORIES:
+- valuation: DCF, multiples, comparable companies, precedent transactions, LBO, enterprise value, equity value, WACC, terminal value, merger models
+- accounting: Financial statements, income statement, balance sheet, cash flow, revenue recognition, depreciation, amortization, working capital, deferred taxes, journal entries, ratios
+- equity_research: Industry analysis, company analysis, stock recommendations, initiating coverage, financial modeling, catalysts, competitive dynamics
+- markets: Market structure, trading, fixed income, derivatives, foreign exchange, commodities, macroeconomics, interest rates, yield curves
+- behavioral: Leadership, teamwork, why finance, why this firm, tell me about yourself, strengths, weaknesses, deal experience, career goals
+- technical: Brainteasers, mental math, market sizing, probability, statistics
+
+Respond in this exact JSON format (no markdown, no code fences):
+{{"category": "<category>", "subcategory": "<specific topic>", "confidence": <0.0-1.0>, "reasoning": "<one sentence>"}}

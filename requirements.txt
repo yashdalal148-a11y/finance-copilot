@@ -1,0 +1,29 @@
+# Finance Intelligence Copilot — Dependencies
+# Core
+streamlit>=1.45.0
+pydantic>=2.11.0
+python-dotenv>=1.1.0
+
+# Speech-to-Text
+faster-whisper>=1.1.0
+
+# LLM
+google-genai>=1.0.0
+groq>=0.14.0
+openai>=1.65.0
+
+# Audio Recording (Streamlit component)
+audio-recorder-streamlit>=0.0.10
+
+# Live Copilot Dependencies
+sounddevice>=0.4.6
+numpy>=1.24.0
+streamlit-autorefresh>=1.0.1
+
+# Document Parsing
+pypdf>=4.0.0
+python-docx>=1.1.0
+
+# Testing
+pytest>=8.4.0
+pytest-cov>=6.2.0
