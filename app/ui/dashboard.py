@@ -13,6 +13,12 @@ from pathlib import Path
 
 import streamlit as st
 
+import sys
+import os
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 from app.agents.context_agent import ContextAgent
 from app.agents.evaluation_agent import EvaluationAgent
 from app.agents.finance_expert_agent import FinanceExpertAgent
