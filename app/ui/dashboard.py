@@ -150,9 +150,13 @@ def render_dashboard() -> None:
         layout="wide",
         initial_sidebar_state="expanded",
     )
+    print("==== [DEBUG] PAGE CONFIG SET ====")
 
     _inject_css()
+    print("==== [DEBUG] CSS INJECTED ====")
+    
     _init_session()
+    print("==== [DEBUG] SESSION INIT COMPLETE ====")
 
     # ── Header ────────────────────────────────────────────────────────
     st.markdown(
